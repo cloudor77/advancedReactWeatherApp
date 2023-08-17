@@ -1,0 +1,60 @@
+.forecast_box {
+  width: 100rem;
+  border-radius: 0.25rem;
+  box-shadow: 10px -2px 20px 2px rgba(0, 0, 0, 30%);
+  color: #333;
+  background-color: #faf6f6;
+  margin: 2rem auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.75rem;
+}
+
+.city_temp {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 60px;
+}
+
+.day {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.description {
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.forecast_main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0rem;
+}
+
+.forecast_details {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.forecast_details > label {
+  padding: 0.25rem;
+}
+
+.value {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

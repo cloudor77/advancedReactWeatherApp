@@ -1,0 +1,135 @@
+.current_weather_segment {
+  width: 30rem;
+  margin: 2rem auto 0rem auto;
+  border-radius: 0.25rem;
+  box-shadow: 10px -2px 20px 2px rgba(0, 0, 0, 30%);
+  padding: 0.25rem 1.5rem 0 1.5rem;
+  color: #333;
+  background-color: #faf6f6;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+}
+
+.basic_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.basic_info > p {
+  padding: 0;
+  /* margin: 0.25rem; */
+}
+
+.city {
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1;
+  letter-spacing: 0.03rem;
+}
+
+.weather_desc {
+  font-weight: 400;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.weather_desc:first-of-type {
+  text-transform: capitalize;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
+.current_temperature {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row_desc {
+  padding: 3px 40px;
+  font-size: 0.9rem;
+}
+
+.row_value {
+  padding: 3px 0;
+  letter-spacing: 0.02rem;
+  font-weight: 600;
+}
+
+.detail {
+  font-weight: 800px;
+  font-size: 1.1rem;
+  letter-spacing: 1.25pxpx;
+}
+
+.more_weather {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(129, 138, 219);
+
+  border-radius: 0.5rem;
+  z-index: -1;
+  /* transform: scaleX(0); */
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+  transform-origin: left;
+}
+
+.more_weather button {
+  position: relative;
+  border: none;
+  padding: 1.25rem 4rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+
+  background-color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  z-index: 1;
+  transition: color 300ms ease-in;
+}
+
+.effect:hover::before {
+  /* transform: scaleX(100%); */
+  opacity: 1;
+}
+
+.more_weather button:hover {
+  color: #fff;
+}
